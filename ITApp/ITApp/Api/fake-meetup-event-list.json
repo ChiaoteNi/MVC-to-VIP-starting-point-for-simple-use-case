@@ -1,0 +1,339 @@
+{
+    "data": [
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 24,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/122747107_10220912211047274_4719583865875960298_o.jpg?_nc_cat=101&ccb=2&_nc_sid=b386c4&_nc_ohc=8RetgMCVC-wAX9Hu7Cy&_nc_oc=AQmThkut5-b9DPq4e_EBDt_OTKgt7KbTVwJWq9ueoKBAFwI8Oqm83zwpqFuRWJQd1YA&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=cc0124462d0057df6e77d20acc4f49cd&oe=5FC620C8",
+                "id": "10220912211007275"
+            },
+            "start_time": "2020-11-08T14:00:00+0800",
+            "end_time": "2020-11-08T22:00:00+0800",
+            "name": "手把手帶你用 Clean Swift 重構 MVC, 並替核心程式碼撰寫單元測試",
+            "description": "Massive ViewController 是所有 iOS 工程師的夢魘, 但是使用 MVVM 之後, 大家真的就過著幸福快樂的日子了嗎? 如果沒有, 其實你可以試試 Clean Swift.在 Clean Swift 當中, 所有物件都只有一個職責, 所有的資料流也只有一個流向. 這讓我們設計單元測試時, 可以一次只專注在一件事. 我們希望和你分享在中型團隊 (4-7 人) 中使用 Clean Swift 的愉快體驗, 分享 Clean Swift 如何在撰寫單元測試、可讀性和 code review 中幫助團隊有一致且清晰的程式碼撰寫風格.這個 work shop 將帶你從一個略為混亂的 MVC 專案逐漸往 Clean Swift 重構, 讓原本複雜的資料流和畫面控制變得簡單純粹. 如果還有時間, 我們會展示核心程式碼加上單元測試的保護在 Clean Swift 中有多容易, 讓最後的程式碼不但單純也非常可靠.",
+            "id": "372719363915514"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 24,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/122747107_10220912211047274_4719583865875960298_o.jpg?_nc_cat=101&ccb=2&_nc_sid=b386c4&_nc_ohc=8RetgMCVC-wAX9Hu7Cy&_nc_oc=AQmThkut5-b9DPq4e_EBDt_OTKgt7KbTVwJWq9ueoKBAFwI8Oqm83zwpqFuRWJQd1YA&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=cc0124462d0057df6e77d20acc4f49cd&oe=5FC620C8",
+                "id": "10220912211007273"
+            },
+            "start_time": "2020-10-27T20:45:00+0800",
+            "end_time": "2020-10-27T22:00:00+0800",
+            "name": "淺談 Semaphore in GCD - 關於他的機制與應用場景",
+            "description": "簡介一下什麼是 Semaphore\n簡單聊聊他的運作原理，以及Demo一下在iOS上我們可以用到的情境",
+            "id": "372719363915522"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-0/p180x540/122070937_3460700900687165_1894339472769178776_o.jpg?_nc_cat=105&ccb=2&_nc_sid=b386c4&_nc_ohc=17cEnQ79WFcAX9weSQd&_nc_ht=scontent.ftpe7-4.fna&tp=6&oh=c7259501196722933a37ad745fbaacba&oe=5FC6790A",
+                "id": "3460700894020499"
+            },
+            "start_time": "2020-10-20T20:30:00+0800",
+            "end_time": "2020-10-20T22:00:00+0800",
+            "name": "無主題、隨便聊、隨便問",
+            "description": "連結",
+            "id": "675961713062734"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 100,
+                "source": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-0/p180x540/121105154_3441078755982713_5543045388255911505_o.jpg?_nc_cat=108&ccb=2&_nc_sid=b386c4&_nc_ohc=4oNNHt6y4BwAX9vQ42g&_nc_ht=scontent.ftpe7-3.fna&tp=6&oh=2248414ea37c937b717bf8de99fbb4c6&oe=5FC693CB",
+                "id": "3441078749316047"
+            },
+            "start_time": "2020-10-13T21:00:00+0800",
+            "end_time": "2020-10-13T23:00:00+0800",
+            "name": "scroll / table / collection / stack 的恩怨情仇 by Nick",
+            "description": "UI 介面的實作，各個不同的元件的操作差異跟應用差異\n歡迎大家來提供不同觀點跟思維，一起成長\n20:45 提供連結",
+            "id": "3629778927084128"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 8,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/120309975_3699772073386583_852193594914617087_o.jpg?_nc_cat=101&ccb=2&_nc_sid=b386c4&_nc_ohc=hh5l-hnBIk0AX9HwMb-&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=e4bdcd48ebb2e90f46085656ad89d271&oe=5FC70045",
+                "id": "3699772070053250"
+            },
+            "start_time": "2020-09-29T21:00:00+0800",
+            "end_time": "2020-09-29T23:00:00+0800",
+            "name": "Coding 心法 - 從天下武功集於一身到各門各派發揚光大",
+            "description": "讓我們 Live Coding，從初學者會做的方式，一步一步讓 Code 看起來像是資深人員的 Code\n\n活動連結會開始前十五分鐘公布在活動內",
+            "id": "814061049347970"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 41,
+                "source": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/s720x720/120073838_3679824972047960_6240533520767156859_o.jpg?_nc_cat=111&ccb=2&_nc_sid=b386c4&_nc_ohc=XEw2pL-nZiUAX-p0vdg&_nc_ht=scontent.ftpe7-2.fna&tp=7&oh=652d7aab55edac3b2f778fe52430e430&oe=5FC69CD7",
+                "id": "3679824968714627"
+            },
+            "start_time": "2020-09-22T20:00:00+0800",
+            "name": "swift Coroutine",
+            "description": "此為實體聚會，亦會開啟線上",
+            "id": "324296285469372"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 49,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/119164336_1085301521906620_7338814071927565203_o.jpg?_nc_cat=107&ccb=2&_nc_sid=b386c4&_nc_ohc=R6wCFj3boXwAX9XK0aj&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=9464097a2f58f367731111c7b68ba3d7&oe=5FC7E344",
+                "id": "1085301518573287"
+            },
+            "start_time": "2020-09-15T20:00:00+0800",
+            "end_time": "2020-09-15T22:00:00+0800",
+            "name": "What's Old in Basic Localization",
+            "description": "Localization 幫助我們只要開發一次 app 就可以賺 N 次不同國家的錢, 是個讓你或是你的團隊發大財的好方法 (誤). 基於一點好奇心翻了一些 localization 的 session, 將開發中較常用到的基本觀念、 Apple 建議的作法 (真的會比較省事) 整理成這次的懶人包分享.\n\nShared link: \nhttps://github.com/kuotinyen/iOS-Taipei",
+            "id": "381440929908859"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 24,
+                "source": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/s720x720/118809117_10220564888324423_6350127896542487204_o.jpg?_nc_cat=103&ccb=2&_nc_sid=b386c4&_nc_ohc=hjTxplb0cZwAX-_ncKY&_nc_ht=scontent.ftpe7-3.fna&tp=7&oh=874dfc8a2ddf4628292a2cfdb4129754&oe=5FC56EE5",
+                "id": "10220564888284422"
+            },
+            "start_time": "2020-09-08T20:15:00+0800",
+            "end_time": "2020-09-08T22:00:00+0800",
+            "name": "關於Memory，為什麼我們該用 ImageIO",
+            "description": "主要是在追以前的WWDC時發現ImageIO這個有趣的framework，今天想拿來稍微試提一下，會示範使用它與使用UIKit的差異\n\n以及如果時間充裕會提一下他的其他應用\n像是EXIF的擷取\n或是未完整圖片的生成等",
+            "id": "314427889839723"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 16,
+                "source": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-0/p180x540/118372998_3306597849430805_2317467605982193695_o.jpg?_nc_cat=104&ccb=2&_nc_sid=b386c4&_nc_ohc=yET1anw5pB8AX-BxI9B&_nc_ht=scontent.ftpe7-2.fna&tp=6&oh=6806796469e1c6a624ce55e4aaf71da6&oe=5FC592C2",
+                "id": "3306597846097472"
+            },
+            "start_time": "2020-09-01T20:30:00+0800",
+            "end_time": "2020-09-01T23:30:00+0800",
+            "name": "區塊鏈 mobile入門 (線上)",
+            "description": "講解區塊鏈原理以及如何與鏈互動",
+            "id": "2668922093375958"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-0/p180x540/117353299_3566146606749131_7281279597527909226_o.jpg?_nc_cat=110&ccb=2&_nc_sid=b386c4&_nc_ohc=3si1Ts6aei8AX_bIIlZ&_nc_ht=scontent.ftpe7-1.fna&tp=6&oh=2f137fb32035ec25d4a9a049fbd2b9f6&oe=5FC58CA8",
+                "id": "3566146600082465"
+            },
+            "start_time": "2020-08-18T21:00:00+0800",
+            "end_time": "2020-08-18T22:30:00+0800",
+            "name": "使用openCV做影像辨識 - 線上活動",
+            "description": "講者: Lamb-Mei\n\n活動使用 google meet\n連結當天 20:45 開始進場~\n\n歡迎大家共襄盛舉",
+            "id": "774264876649325"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/117343773_3243498449074079_8902650803978123038_o.jpg?_nc_cat=107&ccb=2&_nc_sid=b386c4&_nc_ohc=XUhQKz0zagcAX9UQjPV&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=999e0ec3694b843c94188cda108f1243&oe=5FC5C8A2",
+                "id": "3243498445740746"
+            },
+            "start_time": "2020-08-11T20:30:00+0800",
+            "end_time": "2020-08-11T22:00:00+0800",
+            "name": "App clips (online event)",
+            "description": "淺談 app clips",
+            "id": "2601841973479284"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 97,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/116104953_1045536952549744_294216987187344911_o.jpg?_nc_cat=110&ccb=2&_nc_sid=b386c4&_nc_ohc=kwE7FnbHLa0AX9iWvcx&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=0d516fba060e39683d440e2adb02bb47&oe=5FC72959",
+                "id": "1045536949216411"
+            },
+            "start_time": "2020-07-28T20:00:00+0800",
+            "end_time": "2020-07-28T22:00:00+0800",
+            "name": "Maintainable code layout in UIKit",
+            "description": "😷 疫情說明\n\n因應新冠肺炎疫情, 參加者須在入場前\n➤ 配戴口罩\n➤ 由工作人員協助測量體溫\n➤ 使用手機填寫簡單健康聲明書和聯絡資訊 (依規定 28 天後自動刪除, 不做其他用途)\n❗️若體溫高於 37.5 度, 未配戴口罩或是不願填寫健康聲明書和聯絡資訊者, 婉拒參加.\n\n👨🏻‍💻👩🏻‍💻考慮無法參加台北聚會活動的朋友, 近期將持續嘗試線上線下同步進行的方式. 如無意外, 線上連結將於當天公布在貼文下方.\n\n\n🎫 活動說明\n分享近期使用 UIStackView 🥞 和 layoutMarginsGuide ▣  custom view 的作法, 不僅可以大幅提升 custom view 的可讀性, 降低維護多個 constraints 的成本, 也讓畫面的刻畫更容易改動和模組化.",
+            "id": "1260540114283439"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 0,
+                "source": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/s720x720/109539839_10220160595977367_482331181065291630_o.jpg?_nc_cat=109&ccb=2&_nc_sid=b386c4&_nc_ohc=hiEcB0IWmhQAX-B2bN-&_nc_ht=scontent.ftpe7-2.fna&tp=7&oh=f6bba45835f71a7f652ce9abab8f75ab&oe=5FC6A2E0",
+                "id": "10220160595937366"
+            },
+            "start_time": "2020-07-21T20:00:00+0800",
+            "end_time": "2020-07-21T22:00:00+0800",
+            "name": "淺談 關於我所理解的ProtoBuf  (實體/線上聚會, 小巨蛋站)",
+            "description": "來聊聊上次沒能講到的Google Protocol Buffer，內容包含：\n1. 概略的基本原理\n2. 他有什麼好處，為什麼我們要用他\n\n\n        因為很久沒辦實體聚會了，我們預期預留一些時間給大家問些工作上遇到的問題，或聊聊天敘敘舊ＸＤ，故這次盡量會在一小時左右結束，請盡量準時到場\n\n\n        另外因應疫情 參加者入場前需要量測體溫 在37.5 度以下，全程佩戴口罩，並線上填寫簡單的健康聲明書跟聯絡資訊(依規定 28 天刪除，不做其他用途)\n若是不願填寫者，婉拒參加\n\n\n        最後為顧及部分不在台北的朋友，我們近期會嘗試幾次實體/線上聚會並行的模式，連結會於當天公布在貼文下方\n\n謝謝",
+            "id": "3398982450135104"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 19,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/107702815_3161599420597316_4120915396918568111_o.jpg?_nc_cat=106&ccb=2&_nc_sid=b386c4&_nc_ohc=P4EK4h4VNnYAX8TMqib&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=cba7aab7f406ed5e0307ff64ca5366e1&oe=5FC5CC41",
+                "id": "3161599417263983"
+            },
+            "start_time": "2020-07-14T21:00:00+0800",
+            "end_time": "2020-07-14T22:00:00+0800",
+            "name": "淺談 iOS Widget",
+            "description": "分享一下 iOS Widget 應用以及限制",
+            "id": "401426160816396"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/106186977_3122391384518120_4824002586151483939_n.jpg?_nc_cat=101&ccb=2&_nc_sid=b386c4&_nc_ohc=TNrr_OEWg_cAX-i61S3&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=fb8c8cf230614e103fc8bf58825e5046&oe=5FC62506",
+                "id": "3122391381184787"
+            },
+            "start_time": "2020-06-30T20:30:00+0800",
+            "end_time": "2020-06-30T22:30:00+0800",
+            "name": "Clean Architecture+MVVM基本款 by 施家誠",
+            "id": "662948337768264"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 49,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/105493497_3412356015461525_6758748687599183394_o.jpg?_nc_cat=107&ccb=2&_nc_sid=b386c4&_nc_ohc=AADA9n_nt2UAX9mFZwJ&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=96b3206fedc261a5db7a17d63345ffbc&oe=5FC6C5ED",
+                "id": "3412356012128192"
+            },
+            "start_time": "2020-06-23T21:00:00+0800",
+            "end_time": "2020-06-23T23:00:00+0800",
+            "name": "WWDC 2020 討論（閒聊",
+            "description": "WWDC 每年總是帶來新的改變\n\n一起來聊聊吧\n\n活動連結 會於開場半小時前公布在活動討論區",
+            "id": "217871909190040"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-0/p180x540/104134645_3079831622107430_4256175338591287674_o.jpg?_nc_cat=103&ccb=2&_nc_sid=b386c4&_nc_ohc=NfDL7Yr04rEAX_9Trku&_nc_ht=scontent.ftpe7-3.fna&tp=6&oh=a161c811aa9285aba9b4838253200437&oe=5FC5BC90",
+                "id": "3079831618774097"
+            },
+            "start_time": "2020-06-16T20:30:00+0800",
+            "end_time": "2020-06-16T23:00:00+0800",
+            "name": "隨便談談（或認真談）Reactive Extensions For Swift (RxSwift) by 施家誠",
+            "id": "263561531562913"
+        },
+        {
+            "start_time": "2020-06-09T20:30:00+0800",
+            "name": "[蘇健豪] Continuous Delivery Concept and Flow",
+            "description": "It’s Not Continuous Delivery If You Can’t Deploy Right Now.\n這次的主題講者蘇健豪將會解釋 Continuous Delivery 的核心概念，\n一些好用的工具並分享他目前所用的 CD 流程。",
+            "id": "1372264913161656"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 77,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/100583623_997587744011332_13142217673670656_o.jpg?_nc_cat=106&ccb=2&_nc_sid=b386c4&_nc_ohc=P72fVSzGSLQAX9k5Gd5&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=8715c08a0e797952f3021183fb3e7913&oe=5FC6029B",
+                "id": "997587740677999"
+            },
+            "start_time": "2020-05-26T21:00:00+0800",
+            "end_time": "2020-05-26T23:30:00+0800",
+            "name": "Clean Swift Router",
+            "description": "Clean Swift 除了在資料流提出 VIP 三個單一職責元件來梳理 ViewController 的資料流外, 對於 ViewController 畫面跳轉的 Routing 也有 Router + Interactor (DataStore) 的組合來處理雜亂的跳轉邏輯. 透過我粗糙拙劣的 Side project 我們將看到 Router 在 ViewController 職責瘦身之路上可以幫上什麼忙. \n\n[給不想用 Clean Swift 的人]\nClean Swift Router 比起 VIP 來說我認為更可以獨立於完整 Clean Swift 的模式去使用, 也就是常見的 MVC / MVVM 都可以套用 Clean Swift Router 的觀念將 Routing 邏輯抽出簡化喔 !",
+            "id": "886053321909877"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 99,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/97909000_3318351804861947_1538737892820516864_o.jpg?_nc_cat=106&ccb=2&_nc_sid=b386c4&_nc_ohc=TlIXBz8SkdQAX-Z35av&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=8dcbf0cba2e18793eaa3b275085bf1b6&oe=5FC89A12",
+                "id": "3318351801528614"
+            },
+            "start_time": "2020-05-19T21:00:00+0800",
+            "end_time": "2020-05-19T22:30:00+0800",
+            "name": "iOS@Taipei 20200519 - VIPER",
+            "description": "聊聊 VIPER Architecture\n\n活動將使用 Google Meet 歡迎大家來參與\n\n活動連結將會在開始前十至二十分鐘公布",
+            "id": "875574749586039"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/s720x720/96736452_10219523882059917_2531577604004118528_n.jpg?_nc_cat=102&ccb=2&_nc_sid=b386c4&_nc_ohc=wvclh6lvBywAX-JXCyF&_nc_ht=scontent.ftpe7-3.fna&tp=7&oh=da6f1faa99eed4c879d514f630395b89&oe=5FC72E34",
+                "id": "10219523882019916"
+            },
+            "start_time": "2020-05-12T21:45:00+0800",
+            "end_time": "2020-05-12T23:00:00+0800",
+            "name": "來閒聊吧～關於我所知道的clean swift 與protobuff",
+            "description": "先說明，是兩個彼此獨立的主題XD\n\nClean Swift(VIP): 一套實作Clean Architecture的架構規範。優點在Scene內的單向資料流，UI與資料面的界線劃分，物件間自帶邊界與文件化等優勢\n\nProtocol-buffer: 一套google推出的資料傳輸格式，能有效的增加資料的安全性，以及降低資料的傳輸量\n\n本次將會以比較free的角度，從我認為相對入門面向的角度來做說明，所以會包含一些相對基礎的操作說明，以及跟之前威廉所提到的內容部分重疊，歡迎大家盡量提問幫我補充內容 讓我們來亂聊吧XDD",
+            "id": "229887568305045"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/95722523_2971499169607343_2300231161995067392_o.jpg?_nc_cat=106&ccb=2&_nc_sid=b386c4&_nc_ohc=zEh3zDyJ0HYAX_y-Lnn&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=9101c6b914359308c1790f71434ba2d5&oe=5FC884B8",
+                "id": "2971499166274010"
+            },
+            "start_time": "2020-05-05T21:30:00+0800",
+            "end_time": "2020-05-05T22:30:00+0800",
+            "name": "MVVMC",
+            "description": "上次聽完了 clean swift，這次我們來聊聊 MVVMC 吧",
+            "id": "236545624292068"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/s720x720/93721524_973029666467140_1427448817665441792_n.jpg?_nc_cat=108&ccb=2&_nc_sid=b386c4&_nc_ohc=-PDXk-BOZ2UAX-0cKXh&_nc_ht=scontent.ftpe7-3.fna&tp=7&oh=f60859e3007551dc3f0a4f71981198be&oe=5FC7A3B1",
+                "id": "973029663133807"
+            },
+            "start_time": "2020-04-21T21:30:00+0800",
+            "end_time": "2020-04-21T23:30:00+0800",
+            "name": "Try Clean Swift!",
+            "description": "除了 MVC, MVVM, VIPER 之外，還有其他 iOS 的架構選擇嗎？有的，而且這個觀念簡單、程式碼可讀性極高容易維護、又天生自帶可測試性！\n\n這次的分享中，我會簡單介紹 Clean Swift 架構及其核心精神、它的優缺點以及它如何幫助我們寫出更乾淨解耦的程式。\n\n範例程式將會包含一個打 API request 的簡單列表 app，以及幾個基本的單元測試，你會發現使用 Clean Swift 不但讓資料流清清楚楚，撰寫單元測試也是很自然的事。",
+            "id": "695009034643425"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/s720x720/93057999_10219212978207515_4319006116286562304_o.jpg?_nc_cat=107&ccb=2&_nc_sid=b386c4&_nc_ohc=eOtHMaQlCpgAX9AYkcK&_nc_ht=scontent.ftpe7-4.fna&tp=7&oh=f3a213394b4f48e38ed5c6b7151a91ef&oe=5FC793F3",
+                "id": "10219212978167514"
+            },
+            "start_time": "2020-04-14T21:30:00+0800",
+            "end_time": "2020-04-14T22:30:00+0800",
+            "name": "關於CollectionDifference",
+            "description": "簡單聊聊關於Swift 5之後推出的API - CollectionDifference\n看看她怎麼幫我們尋找兩組list中間的差異，跟大家一起爬一次他們背後的Code，並簡單介紹一下這隻API所使用的Diif算法的概念\n\nDiff算法的論文：\nhttp://www.xmailserver.org/diff2.pdf\n\n關於Diff演算法圖示化的網站：\nhttps://blog.robertelder.org/diff-algorithm/\n\n以及裡面提到下三角矩陣的Wiki說明：\nhttps://en.wikipedia.org/wiki/Triangular_matrix",
+            "id": "2557127097931960"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 47,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/91753570_2887142978042963_96207572373078016_n.jpg?_nc_cat=106&ccb=2&_nc_sid=b386c4&_nc_ohc=L3Zs1tLjKNYAX_4T28P&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=1ff225ef80b8d9137807f3b505945724&oe=5FC5A74B",
+                "id": "2887142974709630"
+            },
+            "start_time": "2020-03-31T21:00:00+0800",
+            "end_time": "2020-03-31T22:30:00+0800",
+            "name": "去你的 autoLayout",
+            "description": "https://reurl.cc/yZepg8\n有人知道上面的梗ㄇ？\n分享一下不同的佈局方式",
+            "id": "596525607600465"
+        },
+        {
+            "cover": {
+                "offset_x": 50,
+                "offset_y": 50,
+                "source": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/s720x720/90114559_10218885878270221_939983623140933632_o.jpg?_nc_cat=110&ccb=2&_nc_sid=b386c4&_nc_ohc=C1ALgzwlzbcAX8wLOHC&_nc_ht=scontent.ftpe7-1.fna&tp=7&oh=f230337ef8f03429c9a4d0bc7701394f&oe=5FC86490",
+                "id": "10218885878230220"
+            },
+            "start_time": "2020-03-17T21:10:00+0800",
+            "end_time": "2020-03-17T23:10:00+0800",
+            "name": "導架構的好幫手 - Xcode File Template",
+            "description": "簡單介紹Xcode File Template:\n\n        內容包含檔案內的變數設定，plist的參數說明，Xib的設置，以及如果時間足夠會順便帶入把檔案搬入Xcode內的script\n        File Template便是我們在new一個新檔案時會選擇的項目，像是Swift File, Objective File, Header File, 或是Cocoa Touch Class等等選項。而其實我們可以利用這一功能來建立我們自己的模板，幫助我們快速的產生初始檔案，或是協助團隊導入新框架",
+            "id": "205361150699279"
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "before": "QVFIUkZAKNmJSb2R3Y3Y5RW5HSFVRX1VNc0I5RjVLaEJvU2NHTTFibHVsdzVpYWhsQVUyYVUwakVjWlRRdF9BT2JNMDZAyQkJ1SnZAuT3BNWTQtVU1zWW1fQmZA3",
+            "after": "QVFIUlNpd1hlc2ZAoeWtJdFZAGUFJ4bkdFZAXpPNkI0SVdKa0VZAcWlxWktwMU5nSmFPS1VySzE0bHdpcUNUbXpsSV8xYm9vNThZAdmNvTHl6Sk9iVDNZAdWhiSXl3"
+        },
+        "next": "https://graph.facebook.com/v8.0/903202893043760/events?access_token=EAAE6wZBFJIK4BAOnZAZCDhXRrc9QtJG64WQanA06r23jyWHtYUUhXglCMhhuEQJkXY96FajyhTGwrmnWc1kxSPJTlOepfm4MnM6XpHjOjWzY2YNKp2VJdsceCFHZBaSW4ejpfpwPY6DLZCEZBTnptAHKokdDadfIjqjaFx8vJ9vhWziJolZCCaNdAMQqe4G7FkZD&fields=cover%2Cowner%2Cstart_time%2Cend_time%2Cname%2Cdescription&limit=25&after=QVFIUlNpd1hlc2ZAoeWtJdFZAGUFJ4bkdFZAXpPNkI0SVdKa0VZAcWlxWktwMU5nSmFPS1VySzE0bHdpcUNUbXpsSV8xYm9vNThZAdmNvTHl6Sk9iVDNZAdWhiSXl3"
+    }
+}

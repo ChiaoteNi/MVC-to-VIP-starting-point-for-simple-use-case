@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<dict>
+    <key>Kind</key>
+    <string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+    <key>Description</key>
+    <string>Four Clean Architecture Template swift file - ViewController, Interactor, Presentor and Model.</string>
+    <key>Summary</key>
+    <string>Four Clean Architecture Template swift file - ViewController, Interactor, Presentor and Model.</string>
+    <key>SortOrder</key>
+    <string>1</string>
+    <key>DefaultCompletionName</key>
+    <string>MyScene</string>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>productName</string>
+            <key>Required</key>
+            <true/>
+            <key>Name</key>
+            <string>SceneName:</string>
+            <key>Description</key>
+            <string>The name of the scene to create</string>
+            <key>Type</key>
+            <string>text</string>
+            <key>NotPersisted</key>
+            <true/>
+            <key>MainTemplateFiles</key>
+            <array>
+                <string>___VARIABLE_productName___VC.swift</string>
+                <string>___VARIABLE_productName___Interactor.swift</string>
+                <string>___VARIABLE_productName___Presenter.swift</string>
+                <string>___VARIABLE_productName___Models.swift</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
