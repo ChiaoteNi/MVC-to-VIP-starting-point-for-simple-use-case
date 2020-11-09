@@ -24,8 +24,8 @@
 		059902A4252214210077BAA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059902A2252214210077BAA2 /* LaunchScreen.storyboard */; };
 		059902AF252214210077BAA2 /* ITAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059902AE252214210077BAA2 /* ITAppTests.swift */; };
 		059902BA252214210077BAA2 /* ITAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059902B9252214210077BAA2 /* ITAppUITests.swift */; };
-		05D324BE254720DF00F50213 /* MeetupEventListAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324BD254720DF00F50213 /* MeetupEventListAPIWorker.swift */; };
-		05D324C32547294600F50213 /* JsonAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324C22547294600F50213 /* JsonAPIWorker.swift */; };
+		05D324BE254720DF00F50213 /* MeetupEventListApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324BD254720DF00F50213 /* MeetupEventListApiWorker.swift */; };
+		05D324C32547294600F50213 /* JsonApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324C22547294600F50213 /* JsonApiWorker.swift */; };
 		05D324C825472A4200F50213 /* JsonFileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324C725472A4200F50213 /* JsonFileWorker.swift */; };
 		05D324CD25472D4300F50213 /* MeetupEventListApiWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324CC25472D4300F50213 /* MeetupEventListApiWorkerTests.swift */; };
 		05D326A225487CAB00F50213 /* MeetupEventFavoriteWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D326A125487CAB00F50213 /* MeetupEventFavoriteWorkerTests.swift */; };
@@ -36,8 +36,28 @@
 		655E90D92535F24C0057ADB3 /* HistoryMeetupEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E90D82535F24C0057ADB3 /* HistoryMeetupEventCell.swift */; };
 		655E90DF2536D7320057ADB3 /* MeetupEventListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E90DE2536D7320057ADB3 /* MeetupEventListHeaderView.swift */; };
 		657714FF2538AF8F0076CC7A /* Array + SafetyAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657714FE2538AF8F0076CC7A /* Array + SafetyAccess.swift */; };
-		65CB92A52554AB0100F5F14F /* MeetupEventDetailAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB92A42554AB0100F5F14F /* MeetupEventDetailAPIWorker.swift */; };
-		65DCDD072554C01600C6863F /* MeetupEventFavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DCDD062554C01600C6863F /* MeetupEventFavoriteState.swift */; };
+		65B6DC722559A43B00F44FD1 /* MeetupEventDetailAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6DC712559A43B00F44FD1 /* MeetupEventDetailAPIWorker.swift */; };
+		65BAABBA25495902003ED7E0 /* MeetupEventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAABB625495902003ED7E0 /* MeetupEventListPresenter.swift */; };
+		65BAABBB25495902003ED7E0 /* MeetupEventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAABB625495902003ED7E0 /* MeetupEventListPresenter.swift */; };
+		65BAABBC25495902003ED7E0 /* MeetupEventListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAABB725495902003ED7E0 /* MeetupEventListInteractor.swift */; };
+		65BAABBD25495902003ED7E0 /* MeetupEventListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAABB725495902003ED7E0 /* MeetupEventListInteractor.swift */; };
+		65BAABC025495902003ED7E0 /* MeetupEventListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAABB925495902003ED7E0 /* MeetupEventListModels.swift */; };
+		65BAABC125495902003ED7E0 /* MeetupEventListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAABB925495902003ED7E0 /* MeetupEventListModels.swift */; };
+		65BAABC22549C685003ED7E0 /* MeetupEventFavoriteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1A10253EA7C400D62747 /* MeetupEventFavoriteWorker.swift */; };
+		65BAABC32549CA1A003ED7E0 /* MeetupEventListApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324BD254720DF00F50213 /* MeetupEventListApiWorker.swift */; };
+		65BAABC42549CA53003ED7E0 /* MeetupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D619625298C5A0077FBD2 /* MeetupEvent.swift */; };
+		65BAABC52549CA5D003ED7E0 /* JsonApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324C22547294600F50213 /* JsonApiWorker.swift */; };
+		65BAABC62549CA68003ED7E0 /* MeetupEventListRawModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051C8E71253C96A800D3E980 /* MeetupEventListRawModels.swift */; };
+		65BAABC72549CA83003ED7E0 /* MeetupEventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D61822529889D0077FBD2 /* MeetupEventListViewController.swift */; };
+		65BAABC82549CA8E003ED7E0 /* ITColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D61A9252AFD530077FBD2 /* ITColor.swift */; };
+		65BAABC92549CA97003ED7E0 /* RecentlyMeetupEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E90D62535F1840057ADB3 /* RecentlyMeetupEventCell.swift */; };
+		65BAABCA2549CA9E003ED7E0 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D619B252AE7C30077FBD2 /* BaseCell.swift */; };
+		65BAABCB2549CAA5003ED7E0 /* ITFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DAFDF125360B9A00129C28 /* ITFont.swift */; };
+		65BAABCC2549CAAB003ED7E0 /* Array + SafetyAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657714FE2538AF8F0076CC7A /* Array + SafetyAccess.swift */; };
+		65BAABCD2549CAB5003ED7E0 /* JsonFileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D324C725472A4200F50213 /* JsonFileWorker.swift */; };
+		65BAABCE2549CAD1003ED7E0 /* MeetupEventListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E90DE2536D7320057ADB3 /* MeetupEventListHeaderView.swift */; };
+		65BAABCF2549CAD1003ED7E0 /* HistoryMeetupEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E90D82535F24C0057ADB3 /* HistoryMeetupEventCell.swift */; };
+		65DCDD092554C26500C6863F /* MeetupEventFavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DCDD082554C26500C6863F /* MeetupEventFavoriteState.swift */; };
 		77BC5F77AB2E2B100BB2DC02 /* Pods_ITApp_ITAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D1C5BC750E0542F18F75D9 /* Pods_ITApp_ITAppUITests.framework */; };
 		B9598ED2B3CAEF86394F0F03 /* Pods_ITApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A47B658FCB8AC8C8EB209B /* Pods_ITApp.framework */; };
 /* End PBXBuildFile section */
@@ -83,8 +103,8 @@
 		059902B5252214210077BAA2 /* ITAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		059902B9252214210077BAA2 /* ITAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAppUITests.swift; sourceTree = "<group>"; };
 		059902BB252214210077BAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05D324BD254720DF00F50213 /* MeetupEventListAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListAPIWorker.swift; sourceTree = "<group>"; };
-		05D324C22547294600F50213 /* JsonAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonAPIWorker.swift; sourceTree = "<group>"; };
+		05D324BD254720DF00F50213 /* MeetupEventListApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListApiWorker.swift; sourceTree = "<group>"; };
+		05D324C22547294600F50213 /* JsonApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonApiWorker.swift; sourceTree = "<group>"; };
 		05D324C725472A4200F50213 /* JsonFileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileWorker.swift; sourceTree = "<group>"; };
 		05D324CC25472D4300F50213 /* MeetupEventListApiWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListApiWorkerTests.swift; sourceTree = "<group>"; };
 		05D326A125487CAB00F50213 /* MeetupEventFavoriteWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventFavoriteWorkerTests.swift; sourceTree = "<group>"; };
@@ -98,8 +118,11 @@
 		655E90D82535F24C0057ADB3 /* HistoryMeetupEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMeetupEventCell.swift; sourceTree = "<group>"; };
 		655E90DE2536D7320057ADB3 /* MeetupEventListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListHeaderView.swift; sourceTree = "<group>"; };
 		657714FE2538AF8F0076CC7A /* Array + SafetyAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + SafetyAccess.swift"; sourceTree = "<group>"; };
-		65CB92A42554AB0100F5F14F /* MeetupEventDetailAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupEventDetailAPIWorker.swift; sourceTree = "<group>"; };
-		65DCDD062554C01600C6863F /* MeetupEventFavoriteState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupEventFavoriteState.swift; sourceTree = "<group>"; };
+		65B6DC712559A43B00F44FD1 /* MeetupEventDetailAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupEventDetailAPIWorker.swift; sourceTree = "<group>"; };
+		65BAABB625495902003ED7E0 /* MeetupEventListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListPresenter.swift; sourceTree = "<group>"; };
+		65BAABB725495902003ED7E0 /* MeetupEventListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListInteractor.swift; sourceTree = "<group>"; };
+		65BAABB925495902003ED7E0 /* MeetupEventListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupEventListModels.swift; sourceTree = "<group>"; };
+		65DCDD082554C26500C6863F /* MeetupEventFavoriteState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupEventFavoriteState.swift; sourceTree = "<group>"; };
 		89F77668734EBFE1E41FF7DF /* Pods-ITApp-ITAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITApp-ITAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ITApp-ITAppUITests/Pods-ITApp-ITAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A47B658FCB8AC8C8EB209B /* Pods_ITApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABD1983B4995480E19B6258 /* Pods-ITAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITAppTests.release.xcconfig"; path = "Target Support Files/Pods-ITAppTests/Pods-ITAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				050D619625298C5A0077FBD2 /* MeetupEvent.swift */,
-				65DCDD062554C01600C6863F /* MeetupEventFavoriteState.swift */,
+				65DCDD082554C26500C6863F /* MeetupEventFavoriteState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				050D61822529889D0077FBD2 /* MeetupEventListViewController.swift */,
+				65BAABB725495902003ED7E0 /* MeetupEventListInteractor.swift */,
+				65BAABB625495902003ED7E0 /* MeetupEventListPresenter.swift */,
+				65BAABB925495902003ED7E0 /* MeetupEventListModels.swift */,
 				655E90D52535F11D0057ADB3 /* Cells and Views */,
 			);
 			path = MeetupEventList;
@@ -187,9 +213,9 @@
 			children = (
 				051C8E69253C952E00D3E980 /* fake-meetup-event-list.json */,
 				051C8E71253C96A800D3E980 /* MeetupEventListRawModels.swift */,
-				05D324BD254720DF00F50213 /* MeetupEventListAPIWorker.swift */,
-				65CB92A42554AB0100F5F14F /* MeetupEventDetailAPIWorker.swift */,
-				05D324C22547294600F50213 /* JsonAPIWorker.swift */,
+				65B6DC712559A43B00F44FD1 /* MeetupEventDetailAPIWorker.swift */,
+				05D324BD254720DF00F50213 /* MeetupEventListApiWorker.swift */,
+				05D324C22547294600F50213 /* JsonApiWorker.swift */,
 				05D324C725472A4200F50213 /* JsonFileWorker.swift */,
 			);
 			path = Api;
@@ -561,7 +587,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CB92A52554AB0100F5F14F /* MeetupEventDetailAPIWorker.swift in Sources */,
 				05DAFDF225360B9A00129C28 /* ITFont.swift in Sources */,
 				655E90D92535F24C0057ADB3 /* HistoryMeetupEventCell.swift in Sources */,
 				05D324C825472A4200F50213 /* JsonFileWorker.swift in Sources */,
@@ -570,19 +595,23 @@
 				050D61AA252AFD530077FBD2 /* ITColor.swift in Sources */,
 				050D61B4252B00840077FBD2 /* MeetupEventCoverImageCell.swift in Sources */,
 				050D61832529889D0077FBD2 /* MeetupEventListViewController.swift in Sources */,
+				65BAABC025495902003ED7E0 /* MeetupEventListModels.swift in Sources */,
 				655E90D72535F1840057ADB3 /* RecentlyMeetupEventCell.swift in Sources */,
-				65DCDD072554C01600C6863F /* MeetupEventFavoriteState.swift in Sources */,
+				65BAABBC25495902003ED7E0 /* MeetupEventListInteractor.swift in Sources */,
+				65DCDD092554C26500C6863F /* MeetupEventFavoriteState.swift in Sources */,
 				059902982522141F0077BAA2 /* AppDelegate.swift in Sources */,
 				0599029A2522141F0077BAA2 /* SceneDelegate.swift in Sources */,
 				050D619725298C5A0077FBD2 /* MeetupEvent.swift in Sources */,
 				655E90DF2536D7320057ADB3 /* MeetupEventListHeaderView.swift in Sources */,
 				051C8E72253C96A800D3E980 /* MeetupEventListRawModels.swift in Sources */,
+				65BAABBA25495902003ED7E0 /* MeetupEventListPresenter.swift in Sources */,
 				050D619C252AE7C30077FBD2 /* BaseCell.swift in Sources */,
 				050D61BE252B00E50077FBD2 /* MeetupEventDescriptionCell.swift in Sources */,
 				657714FF2538AF8F0076CC7A /* Array + SafetyAccess.swift in Sources */,
-				05D324C32547294600F50213 /* JsonAPIWorker.swift in Sources */,
+				05D324C32547294600F50213 /* JsonApiWorker.swift in Sources */,
 				050D618F252988FF0077FBD2 /* MeetupEventDetailViewController.swift in Sources */,
-				05D324BE254720DF00F50213 /* MeetupEventListAPIWorker.swift in Sources */,
+				65B6DC722559A43B00F44FD1 /* MeetupEventDetailAPIWorker.swift in Sources */,
+				05D324BE254720DF00F50213 /* MeetupEventListApiWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,9 +619,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BAABCC2549CAAB003ED7E0 /* Array + SafetyAccess.swift in Sources */,
+				65BAABC62549CA68003ED7E0 /* MeetupEventListRawModels.swift in Sources */,
+				65BAABC22549C685003ED7E0 /* MeetupEventFavoriteWorker.swift in Sources */,
+				65BAABCE2549CAD1003ED7E0 /* MeetupEventListHeaderView.swift in Sources */,
 				05D326A225487CAB00F50213 /* MeetupEventFavoriteWorkerTests.swift in Sources */,
 				059902AF252214210077BAA2 /* ITAppTests.swift in Sources */,
+				65BAABC92549CA97003ED7E0 /* RecentlyMeetupEventCell.swift in Sources */,
+				65BAABCF2549CAD1003ED7E0 /* HistoryMeetupEventCell.swift in Sources */,
+				65BAABC32549CA1A003ED7E0 /* MeetupEventListApiWorker.swift in Sources */,
+				65BAABC52549CA5D003ED7E0 /* JsonApiWorker.swift in Sources */,
 				05D324CD25472D4300F50213 /* MeetupEventListApiWorkerTests.swift in Sources */,
+				65BAABC72549CA83003ED7E0 /* MeetupEventListViewController.swift in Sources */,
+				65BAABBD25495902003ED7E0 /* MeetupEventListInteractor.swift in Sources */,
+				65BAABC125495902003ED7E0 /* MeetupEventListModels.swift in Sources */,
+				65BAABCB2549CAA5003ED7E0 /* ITFont.swift in Sources */,
+				65BAABCD2549CAB5003ED7E0 /* JsonFileWorker.swift in Sources */,
+				65BAABBB25495902003ED7E0 /* MeetupEventListPresenter.swift in Sources */,
+				65BAABC82549CA8E003ED7E0 /* ITColor.swift in Sources */,
+				65BAABCA2549CA9E003ED7E0 /* BaseCell.swift in Sources */,
+				65BAABC42549CA53003ED7E0 /* MeetupEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,15 +850,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49X9D2W8KH;
+				DEVELOPMENT_TEAM = 7Y4TPNE48W;
 				INFOPLIST_FILE = ITAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = TESTONLY;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tykuo.ITAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -828,15 +874,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49X9D2W8KH;
+				DEVELOPMENT_TEAM = 7Y4TPNE48W;
 				INFOPLIST_FILE = ITAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = TESTONLY;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tykuo.ITAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -851,8 +897,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49X9D2W8KH;
+				DEVELOPMENT_TEAM = 7Y4TPNE48W;
 				INFOPLIST_FILE = ITAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,8 +919,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49X9D2W8KH;
+				DEVELOPMENT_TEAM = 7Y4TPNE48W;
 				INFOPLIST_FILE = ITAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

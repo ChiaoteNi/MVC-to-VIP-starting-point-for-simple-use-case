@@ -88,31 +88,11 @@ final class RecentlyMeetupEventCell: BaseCell {
             make.leading.trailing.equalTo(contentView.layoutMarginsGuide)
         }
     }
-
-    func configureCell(with meetupEvent: MeetupEvent) {
-        titleLabel.text = meetupEvent.title
-        hostNameLabel.text = meetupEvent.hostName
-
-        if let eventDate = meetupEvent.date {
-            dateLabel.text = getDateText(with: eventDate)
-        } else {
-            dateLabel.text = ""
-        }
-
-        coverImageView.image = nil
-
-        if let coverImageUrl = meetupEvent.coverImageLink, let url = URL(string: coverImageUrl) {
-            coverImageView.isHidden = false
-            coverImageView.kf.setImage(with: url)
-        } else {
-            coverImageView.isHidden = true
-        }
-    }
-
-    private func getDateText(with date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = Constant.dateFormat
-        return formatter.string(from: date)
+    
+    // MARK: Configurate Cell.
+    
+    func configureCell(with meetupEvent: MeetupEventList.DisplayRecentlyEvent) {
+        // TODO: 這邊用轉換好的UIModel來建立Cell畫面顯示
     }
 }
 
@@ -147,6 +127,5 @@ extension RecentlyMeetupEventCell {
         static let imageCornerRadius: CGFloat = 5
         static let seperatorHeight: CGFloat = 1
         static let coverImageLengthRatio: CGFloat = 220/335
-        static var dateFormat: String { "MM月dd日" }
     }
 }

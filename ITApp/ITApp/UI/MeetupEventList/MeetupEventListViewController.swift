@@ -5,35 +5,75 @@
 //  Created by kuotinyen on 2020/10/4.
 //
 
+/*
+ ViewController： 回歸畫面的顯示，以及資料流的觸發
+ ex: 把UIModel無腦塞到畫面上，請interactor幫忙拉資料
+ */
+
 import UIKit
 import Kingfisher
 
-final class MeetupEventListViewController: UIViewController {
+protocol MeetupEventListDisplayLogic: AnyObject {
+    func displayMeetupEvents(viewModel: MeetupEventList.FetchEvents.ViewModel)
+}
 
+final class MeetupEventListViewController: UIViewController, MeetupEventListDisplayLogic {
+    
     enum SectionType: Int, CaseIterable {
         case recently
         case history
     }
 
     private lazy var tableView: UITableView = .init()
-    private let meetupEventListAPIWorker: MeetupEventListAPIWorker = .init()
-    private let favoriteManager: MeetupEventFavoriteWorker = .shared
-    private var recentlyEvents: [MeetupEvent] = []
-    private var historyEvents: [MeetupEvent] = []
+    
+    // 這邊VC的dataSource由原本API回來的資料，替換成Presenter轉換後純粹跟畫面有關的UIModel
+    private var recentlyEvents: [MeetupEventList.DisplayRecentlyEvent] = []
+    private var historyEvents: [MeetupEventList.DisplayHistoryEvent] = []
+    
+    private var interactor: MeetupEventListBusinessLogic?
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
-        observeEventFavoriteStateChange()
         loadData()
+//        subscribeFavoriteChange()
     }
     
     override func willMove(toParent parent: UIViewController?) {
         super.willMove(toParent: parent)
         
         guard parent == nil else { return }
-        favoriteManager.removeObserver(self)
+//        unsubscribeFavoriteChange()
+    }
+    
+    // MARK: Setup
+    
+    private func setup() {
+        let presenter: MeetupEventListPresenter = .init()
+        let interactor: MeetupEventListInteractor = .init()
+        
+        self.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = self
+    }
+    
+    // MARK: - Use cases
+    
+    func displayMeetupEvents(viewModel: MeetupEventList.FetchEvents.ViewModel) {
+        // TODO: 把API回來的資料(Interactor->Presenter->VC)，準備塞到dataSource並reloadData，顯示到畫面上
     }
 }
 
@@ -60,24 +100,8 @@ extension MeetupEventListViewController {
     }
     
     private func loadData() {
-        meetupEventListAPIWorker.fetchMeetupEvents { [weak self] (result) in
-            self?.handle(fetchMeetupEvents: result)
-        }
-    }
-
-    private func handle(fetchMeetupEvents result: MeetupEventListAPIWorker.APIResult) {
-        switch result {
-        case let .success((recentlyEvents, historyEvents)):
-            self.recentlyEvents = recentlyEvents
-            self.historyEvents = historyEvents
-            self.tableView.reloadData()
-        case let .failure(error):
-            print("#### error -> \(error)")
-        }
-    }
-    
-    private func observeEventFavoriteStateChange() {
-        favoriteManager.addObserver(self)
+        // TODO: 請Interactor幫忙拉資料
+        interactor?.fetchMeetupEvents(request: <#T##MeetupEventList.FetchEvents.Request#>)
     }
 }
 
@@ -110,18 +134,7 @@ extension MeetupEventListViewController: UITableViewDataSource {
         case .history:
             if let cell = tableView.dequeueReusableCell(withIdentifier: HistoryMeetupEventCell.reusableIdentifier, for: indexPath) as? HistoryMeetupEventCell {
                 guard let meetupEvent = historyEvents[safe: indexPath.row] else { return cell }
-                
-                let favoriteState: MeetupEventFavoriteState = favoriteManager.getFavoriteState(withID: meetupEvent.id)
-                cell.configureCell(with: meetupEvent, favoriteState: favoriteState)
-
-                cell.tapFavoriteCallBack = { [weak self] cellFavoriteState in
-                    switch cellFavoriteState {
-                    case .favorite:
-                        self?.favoriteManager.addFavoriteMeetupEvent(with: meetupEvent.id)
-                    case .unfavorite:
-                        self?.favoriteManager.removeFavoriteMeetupEvent(with: meetupEvent.id)
-                    }
-                }
+                cell.configureCell(with: meetupEvent)
                 return cell
             }
         }
@@ -159,33 +172,17 @@ extension MeetupEventListViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedMeetupEventID: String?
-
+        let selectedEventID: String?
         switch indexPath.section {
-        case SectionType.recently.rawValue:
-            selectedMeetupEventID = recentlyEvents[safe: indexPath.row]?.id
-        case SectionType.history.rawValue:
-            selectedMeetupEventID = historyEvents[safe: indexPath.row]?.id
-        default:
-            selectedMeetupEventID = nil
+        case 0:     selectedEventID = recentlyEvents[safe: indexPath.row]?.id
+        case 1:     selectedEventID = historyEvents[safe: indexPath.row]?.id
+        default:    selectedEventID = nil
         }
-
-        guard let meetupEventID = selectedMeetupEventID else { return }
-        let meetupEventDetailViewController = MeetupEventDetailViewController(meetupEventID: meetupEventID)
-        let navigationController = UINavigationController(rootViewController: meetupEventDetailViewController)
-        present(navigationController, animated: true, completion: nil)
-    }
-}
-
-// MARK: - MeetupEventFavorite Observer function.
-extension MeetupEventListViewController: MeetupEventFavoriteObserver {
-
-    func favoriteStateDidChanged(eventID: String, to newState: MeetupEventFavoriteState) {
-        guard
-            let row = historyEvents.firstIndex(where: { $0.id == eventID }),
-            let section = SectionType.allCases.firstIndex(where: { $0 == .history }) else { return }
-
-        tableView.reloadRows(at: [.init(row: row, section: section)], with: .fade)
+        guard let eventID = selectedEventID else { return }
+        
+        let detailVC: MeetupEventDetailViewController = .init(meetupEventID: eventID)
+        let navController: UINavigationController = .init(rootViewController: detailVC)
+        present(navController, animated: true, completion: nil)
     }
 }
 

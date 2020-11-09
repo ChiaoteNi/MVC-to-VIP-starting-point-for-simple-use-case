@@ -39,10 +39,9 @@ final class HistoryMeetupEventCell: BaseCell {
         return imageView
     }()
     
-    private lazy var favoriteButton: UIButton = {
+    private(set) lazy var favoriteButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle(nil, for: .normal)
-        button.tintColor = Constant.Color.favoriteButtonUnfavorite
         button.setImage(Constant.Image.favoriteButton, for: .normal)
         
         button.addTarget(self,
@@ -51,34 +50,21 @@ final class HistoryMeetupEventCell: BaseCell {
         return button
     }()
     
-    var tapFavoriteCallBack: ((MeetupEventFavoriteState) -> Void)?
-
-    private var favoriteState: MeetupEventFavoriteState = .unfavorite {
-        didSet {
-            switch favoriteState {
-            case .favorite:
-                favoriteButton.tintColor = Constant.Color.favoriteButtonIsFavorite
-            case .unfavorite:
-                favoriteButton.tintColor = Constant.Color.favoriteButtonUnfavorite
-            }
-        }
-    }
+    var tapFavoriteCallBack: (() -> Void)?
     
     override func setupViews() {
         super.setupViews()
-        selectionStyle = .none
         
         contentView.addSubview(coverImageView)
         coverImageView.snp.makeConstraints { make in
             make.top.leading.equalTo(contentView.layoutMarginsGuide)
-            make.width.equalTo(Constant.coverImageLength)
-            make.height.equalTo(Constant.coverImageLength)
+            make.size.equalTo(Constant.Size.coverImage)
         }
         
         contentView.addSubview(favoriteButton)
         favoriteButton.snp.makeConstraints { make in
             make.top.trailing.equalTo(contentView.layoutMarginsGuide)
-            make.size.equalTo(Constant.favoriteIconSize)
+            make.size.equalTo(Constant.Size.favoriteIcon)
         }
         
         let stackView: UIStackView = .init(arrangedSubviews: [
@@ -102,31 +88,18 @@ final class HistoryMeetupEventCell: BaseCell {
         super.prepareForReuse()
 
         tapFavoriteCallBack = nil
-        favoriteState = .unfavorite
     }
-
-    func configureCell(with meetupEvent: MeetupEvent, favoriteState: MeetupEventFavoriteState) {
-        self.favoriteState = favoriteState
-
+    
+    func configureCell(with meetupEvent: MeetupEventList.DisplayHistoryEvent) {
         titleLabel.text = meetupEvent.title
         hostNameLabel.text = meetupEvent.hostName
-
-        if let eventDate = meetupEvent.date {
-            dateLabel.text = getDateText(with: eventDate)
-        } else {
-            dateLabel.text = ""
-        }
-
+        dateLabel.text = meetupEvent.dateText
+        favoriteButton.tintColor = meetupEvent.favoriteButtonColor
+        
         coverImageView.image = nil
-        if let coverImageUrl = meetupEvent.coverImageLink, let url = URL(string: coverImageUrl) {
+        if let url = meetupEvent.coverImageURL {
             coverImageView.kf.setImage(with: url)
         }
-    }
-
-    private func getDateText(with date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = Constant.dateFormat
-        return formatter.string(from: date)
     }
 }
 
@@ -134,8 +107,7 @@ final class HistoryMeetupEventCell: BaseCell {
 extension HistoryMeetupEventCell {
     
     @objc func handleFavoriteButtonDidTap() {
-        favoriteState = !favoriteState
-        tapFavoriteCallBack?(favoriteState)
+        tapFavoriteCallBack?()
     }
 }
 
@@ -154,8 +126,6 @@ extension HistoryMeetupEventCell {
             static let titleLabel: UIColor = .itBlack
             static let hostNameLabel: UIColor = .itGrayText
             static let coverImageView: UIColor = .itGray
-            static let favoriteButtonIsFavorite: UIColor = .itOrange
-            static let favoriteButtonUnfavorite: UIColor = .itLightGray
         }
         
         enum Image {
@@ -166,12 +136,13 @@ extension HistoryMeetupEventCell {
             static let normal: CGFloat = 16
         }
         
+        enum Size {
+            static let coverImage: CGSize = .init(width: 60, height: 60)
+            static let favoriteIcon: CGSize = .init(width: 30, height: 30)
+        }
+        
         enum NumberOfLine {
             static let common: Int = 2
         }
-        
-        static let coverImageLength: CGFloat = 60
-        static let favoriteIconSize: CGSize = .init(width: 30, height: 30)
-        static var dateFormat: String { "MM月dd日" }
     }
 }
